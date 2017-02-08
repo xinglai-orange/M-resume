@@ -2,6 +2,8 @@
 .swiper-container {
   width: 100%;
   height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .swiper-slide {
   text-align: center;
@@ -21,13 +23,15 @@
   align-items: center;
 }
 .xl-page1 {
-  position: relative;
+  overflow: hidden;
 }
 .xl-page1 .bac-img1 {
   width: 100%;
   height: 100%;
   z-index: -1;
   position: absolute;
+  top: 0;
+  left: 0;
 }
 .xl-page1 .round {
   width: 40vw;
@@ -56,8 +60,8 @@
   font-size: 36px;
   color: #000;
   letter-spacing: 10px;
-  position: absolute;
-  top: 40%;
+  display: inline-block;
+  margin-top: -22vh;
   z-index: 3;
   opacity: 0;
 }
@@ -121,6 +125,9 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .xl-page2 .myname {
   font-size: 30px;
@@ -140,7 +147,7 @@
   height: 30vw;
   line-height: 31vw;
   position: absolute;
-  top: 50%;
+  top: 49%;
   left: 50%;
   z-index: -1;
   transform: translate(-50%, -50%);
@@ -242,12 +249,14 @@
   height: 100%;
   z-index: -1;
   position: absolute;
+  top: 0;
+  left: 0;
 }
 .xl-page3 .killRoll {
   width: 20vw;
   height: 20vw;
   position: absolute;
-  top: 20px;
+  top: 30px;
   left: 10vw;
   background-size: contain;
 }
@@ -258,19 +267,19 @@
   left: 70vw;
 }
 .xl-page3 .killRoll4 {
-  top: 30vw;
+  top: 35vw;
 }
 .xl-page3 .killRoll5 {
-  top: 30vw;
+  top: 35vw;
   left: 40vw;
 }
 .xl-page3 .killRoll6 {
-  top: 30vw;
+  top: 35vw;
   left: 70vw;
 }
 .xl-page3 ul {
   position: absolute;
-  top: 40%;
+  top: 38%;
   left: 10%;
 }
 .xl-page3 ul li {
@@ -288,6 +297,8 @@
   height: 100%;
   z-index: -1;
   position: absolute;
+  top: 0;
+  left: 0;
 }
 .xl-page4 .workimg {
   width: 60vw;
@@ -372,7 +383,7 @@
 .xl-page4 ul {
   width: 50vw;
   position: absolute;
-  top: 4%;
+  top: 3%;
   left: 13%;
   color: #000;
 }
@@ -383,7 +394,7 @@
 }
 .xl-page4 .uls2 {
   top: 17%;
-  left: 48%;
+  left: 52%;
   font-weight: 700;
 }
 .xl-page4 .uls3 {
@@ -403,6 +414,8 @@
   height: 100%;
   z-index: -1;
   position: absolute;
+  top: 0;
+  left: 0;
 }
 .xl-page5 .weixin {
   width: 40vw;
@@ -461,7 +474,7 @@
   }
 }
 .xl-page5 .narrow {
-  animation: narrow 1s ease 1s both;
+  animation: narrow 1s ease 2s both;
 }
 @keyframes narrow {
   from {
