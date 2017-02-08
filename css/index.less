@@ -1,0 +1,218 @@
+
+@import url(./common.css);
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 16px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.page1 {
+    position: relative;
+    .bac-img1 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+    .round {
+        width: 40vw;
+        height: 40vw;
+        border-radius: 100%;
+        box-sizing: border-box;
+        background-color: #fff;
+        position: absolute;
+        top: 11%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+    .img-likeMe {
+        width: 18vw;
+        height: 36vw;
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+    .img-text-1 {
+        width: 60vw;
+        height: 16vw;
+        position: absolute;
+        top: 34%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-500px);
+        z-index: 3;
+    }
+    .img-handhlip {
+        width: 16vw;
+        height: 16vw;
+        position: absolute;
+        bottom: 6%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 5;
+    }
+    .tip {
+        width: 3vw;
+        height: 3vw;
+        border-radius: 50%;
+        opacity: 0;
+        background-color: #000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 0;
+    }
+    .tip2 {
+        margin-top: 6vw;
+    }
+    .tip3 {
+        margin-top: 12vw;
+
+    }
+    .tip4 {
+        margin-top: 24vw;
+    }
+    .tip5 {
+        margin-top: 30vw;
+    }
+    .tip6 {
+        margin-top: 36vw;
+    }
+
+    //  动画-出现
+    .ani-appear {
+        opacity: 0;
+        animation: ani-appear 1s ease forwards;
+    }
+    @keyframes ani-appear {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    //降落动画
+    .ani-land {
+        animation: ani-land 1s ease 0.5s forwards;
+    }
+    @keyframes ani-land {
+        from {
+            transform: translateX(-50%) translateY(-500px);
+        }
+        to {
+            transform: translateX(-50%) translateY(0);
+        }
+    }
+    .tip1 {
+        animation: ani-tip1 0.5s ease 1.5s forwards;
+    }
+    @keyframes ani-tip1 {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .tip2 {
+        animation: ani-tip1 0.5s ease 2s forwards;
+    }
+    @keyframes ani-tip1 {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .tip3 {
+        animation: ani-tip1 0.5s ease 2.5s forwards;
+    }
+    @keyframes ani-tip1 {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .tip4 {
+        animation: ani-tip1 0.5s ease 3s forwards;
+    }
+    @keyframes ani-tip1 {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .tip5 {
+        animation: ani-tip1 0.5s ease 3.5s forwards;
+    }
+    @keyframes ani-tip1 {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .tip6 {
+        animation: ani-tip1 0.5s ease 4s forwards;
+    }
+    @keyframes ani-tip1 {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .ani-shaking {
+        animation: ani-shaking 2s ease infinite;
+    }
+    @keyframes ani-shaking {
+        0% {
+            transform: translateY(0) translateX(-50%);
+        }
+        50% {
+            transform: translateY(-100%) translateX(-50%);
+        }
+        100% {
+            transform: translateY(0) translateX(-50%);
+        }
+    }
+}
+.page2{
+    .bac-img2{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+}

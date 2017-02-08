@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>兴来的简历</title>
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    
+    <script src="js/prefixfree.min.js"></script>
+ 	
+    <script src="js/swiper.min.js"></script>
+	
+</head>
+<body>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide page1">
+				<img src="images/bac-1.jpg" class="bac-img1" alt="" />
+				<span class="round ani-appear"></span>
+				<img src="images/likeMe.png" class="img-likeMe ani-appear" alt="" />
+				<img src="images/text-1.png" class="img-text-1 ani-land" alt="" />
+				<img src="images/handSlip.png" class="img-handhlip ani-shaking" alt="" />
+				<span class="tip1 tip"></span>
+				<span class="tip2 tip"></span>
+				<span class="tip3 tip"></span>
+				<span class="tip4 tip"></span>
+				<span class="tip5 tip"></span>
+				<span class="tip6 tip"></span>
+			</div>
+			<div class="swiper-slide page2">
+				<img src="images/bac-2.jpg" class="bac-img2" alt="" />
+			</div>
+			<div class="swiper-slide">第三页</div>
+			<div class="swiper-slide">第四页</div>
+		</div>
+	</div>
+
+</body>
+<script>        
+  var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        direction: 'vertical',
+        slidesPerView: 1,
+        loop:true, 
+        grabCursor: true,
+        paginationClickable: true,
+    });
+ </script>
+</html>
