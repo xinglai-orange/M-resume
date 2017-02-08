@@ -1,50 +1,184 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <title>兴来的简历</title>
-    <link rel="stylesheet" href="css/swiper.css" />
-    <link rel="stylesheet" type="text/css" href="css/index.css"/>
-    
-    <script src="js/prefixfree.min.js"></script>
- 	
-    <script src="js/swiper.min.js"></script>
-	
-</head>
-<body>
-	<div class="swiper-container">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide page1">
-				<img src="images/bac-1.jpg" class="bac-img1" alt="" />
-				<span class="round ani-appear"></span>
-				<img src="images/likeMe.png" class="img-likeMe ani-appear" alt="" />
-				<img src="images/text-1.png" class="img-text-1 ani-land" alt="" />
-				<img src="images/handSlip.png" class="img-handhlip ani-shaking" alt="" />
-				<span class="tip1 tip"></span>
-				<span class="tip2 tip"></span>
-				<span class="tip3 tip"></span>
-				<span class="tip4 tip"></span>
-				<span class="tip5 tip"></span>
-				<span class="tip6 tip"></span>
-			</div>
-			<div class="swiper-slide page2">
-				<img src="images/bac-2.jpg" class="bac-img2" alt="" />
-			</div>
-			<div class="swiper-slide">第三页</div>
-			<div class="swiper-slide">第四页</div>
-		</div>
-	</div>
 
-</body>
-<script>        
-  var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        direction: 'vertical',
-        slidesPerView: 1,
-        loop:true, 
-        grabCursor: true,
-        paginationClickable: true,
-    });
- </script>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>兴来的简历</title>
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link href='//cdn.webfont.youziku.com/webfonts/nomal/97480/19650/589b2f9cf629d80600660876.css' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" type="text/css" href="css/index.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+		<script src="js/prefixfree.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script src="js/swiper.animate1.0.2.min.js"></script>
+	</head>
+
+	<body>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<!--简历第一页-->
+				<div class="swiper-slide xl-page1">
+					<img src="images/bac-1.webp" class="bac-img1" alt="" />
+					<span class="round ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay=".5s"></span>
+					<img src="images/likeMe.webp" class="img-likeMe ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s" alt="" />
+					<h1 class="img-text-1 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="1.5s" />
+						我的简历
+					</h1>
+					<img src="images/handSlip.svg" class="img-handhlip ani-shaking handhlip1" alt="" />
+					<span class="tip1 tip ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="2.3s"></span>
+					<span class="tip2 tip ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="2.6s"></span>
+					<span class="tip3 tip ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="2.9s"></span>
+					<span class="tip4 tip ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="3.2s"></span>
+					<span class="tip5 tip ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="3.5s"></span>
+					<span class="tip6 tip ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="3.8s"></span>
+				</div>
+				<!--简历第二页-->
+				<div class="swiper-slide xl-page2">
+					<img src="images/bac-2.webp" class="bac-img2" alt="" />
+					<div class="postMark">
+						<img src="images/mypho.webp" class="mypho ani" id="postpho" alt="" />
+						<span class="frame ani" id="frame"></span>
+					</div>
+					<h1 class="myname ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="2s">郝兴来</h1>
+					<img src="images/qualified.png" class="qualified ani" id="qualified" alt="" />
+					<div class="aboutMe">
+
+						<span id="aboutLine" class="line ani"></span>
+						<div class="about ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s" swiper-animate-delay="3.5s">
+							年龄:26岁
+						</div>
+						<div class="about ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s" swiper-animate-delay="4s">
+							籍贯:湖北
+						</div>
+						<div class="about ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s" swiper-animate-delay="4.5s">
+							毕业院校:福建闽江学院(本科)
+						</div>
+						<div class="about ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s" swiper-animate-delay="5s">
+							期望职业:前端工程师
+						</div>
+						<div class="about ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s" swiper-animate-delay="5.5s">
+							期望薪资：10-15k
+						</div>
+					</div>
+					<img src="images/handSlip.svg" class="img-handhlip ani-shaking" id="handhlip" alt="" />
+				</div>
+				<!--简历第三页-->
+				<div class="swiper-slide xl-page3">
+					<img src="images/bac-3.webp" class="bac-img2" alt="" />
+					<img src="images/kill1.webp" alt="" class="killRoll killRoll1 ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s" />
+					<img src="images/kill2.webp" alt="" class="killRoll killRoll2 ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="0.6s" />
+					<img src="images/kill3.webp" alt="" class="killRoll killRoll3 ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="0.9s" />
+					<img src="images/kill4.webp" alt="" class="killRoll killRoll4 ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="1.2s" />
+					<img src="images/kill5.webp" alt="" class="killRoll killRoll5 ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="1.5s" />
+					<img src="images/kill6.webp" alt="" class="killRoll killRoll6 ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="1.8s" />
+					<ul>
+						<li class="skill ani" swiper-animate-effect="zoomInRight" swiper-animate-duration="1s" swiper-animate-delay="1.8s">1.100%还原设计图；</li>
+						<li class="skill ani" swiper-animate-effect="zoomInRight" swiper-animate-duration="1s" swiper-animate-delay="2.1s">2.掌握HTML5/CSS3/Javascript及相关插件；</li>
+						<li class="skill ani" swiper-animate-effect="zoomInRight" swiper-animate-duration="1s" swiper-animate-delay="2.4s">3.了解HTTP协议，熟练使用AJAX/JSON；</li>
+						<li class="skill ani" swiper-animate-effect="zoomInRight" swiper-animate-duration="1s" swiper-animate-delay="2.7s">4.熟练使用Git/Gulp/NPM；</li>
+						<li class="skill ani" swiper-animate-effect="zoomInRight" swiper-animate-duration="1s" swiper-animate-delay="3s">5.了解NodeJS,熟悉前端MVC框架:AngularJS。</li>
+					</ul>
+					<img src="images/handSlip.svg" class="img-handhlip ani-shaking handhlip1" alt="" />
+
+				</div>
+				<!--简历第四页-->
+				<div class="swiper-slide xl-page4">
+					<img src="images/bac-2.webp" class="bac-img2" alt="" />
+					<img src="images/workShow.png" class="workimg ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0s" alt="" />
+					<span class="line line1 ani" id="page4Line1"></span>
+					<span class="line line2 ani" id="page4Line2"></span>
+					<span class="line line3 ani" id="page4Line3"></span>
+					<span class="line line4 ani" id="page4Line4"></span>
+					<ul class="uls1 ani" swiper-animate-effect="flipInX" swiper-animate-duration="1s" swiper-animate-delay="1s">
+						<li>偶尔看看书</li>
+						<li>偶尔哼哼歌</li>
+						<li>别让我停下来</li>
+					</ul>
+					<ul class="uls2 ani" swiper-animate-effect="flipInX" swiper-animate-duration="1s" swiper-animate-delay="1.5s">
+						<li>NO.1</li>
+						<li>14年7月-16年8月</li>
+						<li>福建润商网络</li>
+						<li>前端工程师</li>
+					</ul>
+					<ul class="uls3 ani" swiper-animate-effect="flipInX" swiper-animate-duration="1s" swiper-animate-delay="2s">
+						<li>NO.2</li>
+						<li>14年3-6月</li>
+						<li>福建城市猎人</li>
+						<li>前端助理</li>
+					</ul>
+					<ul class="uls4 ani" swiper-animate-effect="flipInX" swiper-animate-duration="1s" swiper-animate-delay="2.5s">
+						<li>喜欢CSS动画</li>
+						<li>偶尔敲点小游戏</li>
+						<li>设计+PS技术合格</li>
+						<li>喜欢钻技术尖</li>
+					</ul>
+					<img src="images/handSlip.svg" class="img-handhlip ani-shaking handhlip1" alt="" />
+				</div>
+				<div class="swiper-slide xl-page5">
+					<img src="images/bac-2.webp" class="bac-img2" alt="" />
+					<img src="images/weixin.png" class="weixin ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" alt="" />
+					<img src="images/thanks.png" class="thanks"/>
+					<img src="images/windmill.webp" class="windmill ani" alt="" />
+					
+					<ul class="concact ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+						<li><img src="images/mobile.svg" class="mobile" alt="" />
+						<span class="ani mobile-right">18571816011</span></li>
+						<li><img src="images/email.svg" class="email"/>
+						<span class="ani email-right">18571816011@163.com</span></li>
+						<li><img src="images/github.svg" class="github"/>
+						<span class="ani github-right">xinglai-orange.github.io/myResume/</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script>
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				direction: 'vertical',
+				slidesPerView: 1,
+				grabCursor: true,
+				paginationClickable: true,
+				runCallbacksOnInit: true,
+				onInit: function(swiper) {
+					swiperAnimateCache(swiper); //隐藏动画元素 
+					swiperAnimate(swiper); //初始化完成开始动画
+					$('.handhlip1').delay(4000).fadeIn();
+				},
+				onSlideChangeEnd: function(swiper) {
+					swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+					$("#postpho").addClass("ani-mypho");
+					$("#Frame").addClass("ani-frame");
+					$("#qualified").addClass("ani-qualified");
+					$("#aboutLine").addClass("ani-line");
+					$('.img-handhlip').delay(4000).fadeIn();
+					$(".xl-page4 .line1").addClass("ani-line1");
+					$(".xl-page4 .line2").addClass("ani-line2");
+					$(".xl-page4 .line3").addClass("ani-line3");
+					$(".xl-page4 .line4").addClass("ani-line4");
+					$(".xl-page5 .windmill").addClass("windroll");
+					$(".xl-page5 .thanks").addClass("narrow");
+				},
+				onSlideChangeStart: function(swiper) {//滑动开始，之前的动画取消
+					$("#postpho").removeClass("ani-mypho");
+					$("#Frame").removeClass("ani-frame");
+					$("#qualified").removeClass("ani-qualified");
+					$("#aboutLine").removeClass("ani-line");
+					$(".xl-page4 .line1").removeClass("ani-line1");
+					$(".xl-page4 .line2").removeClass("ani-line2");
+					$(".xl-page4 .line3").removeClass("ani-line3");
+					$(".xl-page4 .line4").removeClass("ani-line4");
+					$(".xl-page5 .windmill").removeClass("windroll");
+					$(".xl-page5 .thanks").removeClass("narrow");
+				},
+				onTouchMove:function(swiper){//手势滑动时小手消失
+					$('.img-handhlip').fadeOut();
+					$('.handhlip1').fadeOut();
+				}
+			});
+	</script>
+
 </html>
