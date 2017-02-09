@@ -8,13 +8,22 @@
 		<link rel="shortcut icon" href="images/favicon.ico" />
 		<link rel="stylesheet" href="css/swiper.min.css" />
 		<link href='//cdn.webfont.youziku.com/webfonts/nomal/97480/19650/589c115ef629d80b8491e86c.css' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="css/loading.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
-
+		<script src="./js/jquery.min.js"></script>
+		
 	</head>
-
+	
 	<body>
+		
 		<div class="swiper-container">
+			<div class="loading">
+        		<div class="la-square-jelly-box la-3x">
+            		<div></div>
+            		<div></div>
+        		</div>
+    		</div>
 			<div class="swiper-wrapper">
 				<!--简历第一页-->
 				<div class="swiper-slide xl-page1">
@@ -38,25 +47,25 @@
 						<img src="images/mypho.webp" class="mypho ani" id="postpho" alt="" />
 						<span class="frame ani" id="frame"></span>
 					</div>
-					<h1 class="myname ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="2s">郝兴来</h1>
+					<h1 class="myname ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1.5s">郝兴来</h1>
 					<img src="images/qualified.png" class="qualified ani" id="qualified" alt="" />
 					<div class="aboutMe">
 
 						<span id="aboutLine" class="line ani"></span>
-						<div class="about ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s" swiper-animate-delay="3.5s">
+						<div class="about ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="2.5s">
 							年龄:26岁
 						</div>
-						<div class="about ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s" swiper-animate-delay="4s">
+						<div class="about ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="3s">
 							籍贯:湖北
 						</div>
-						<div class="about ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s" swiper-animate-delay="4.5s">
+						<div class="about ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="3.5s">
 							毕业院校:福建闽江学院(本科)
 						</div>
-						<div class="about ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s" swiper-animate-delay="5s">
+						<div class="about ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="4s">
 							期望职业:前端工程师
 						</div>
-						<div class="about ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s" swiper-animate-delay="5.5s">
-							期望薪资：10-15k
+						<div class="about ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="4.5s">
+							期望薪资：12k
 						</div>
 					</div>
 					<img src="images/handSlip.svg" class="img-handhlip ani-shaking" id="handhlip" alt="" />
@@ -64,7 +73,7 @@
 				<!--简历第三页-->
 				<div class="swiper-slide xl-page3">
 					<img class="bac-img2 lazy" data-original="images/bac-2.webp" alt="" />
-					<img data-original="images/killtext.webp" class="skills lazy"/>
+					<img data-original="images/killtext.webp" class="skills lazy" />
 					<img data-original="images/kill1.webp" alt="" class="killRoll killRoll1 ani lazy" swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s" />
 					<img data-original="images/kill2.webp" alt="" class="killRoll killRoll2 ani lazy" swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="0.6s" />
 					<img data-original="images/kill3.webp" alt="" class="killRoll killRoll3 ani lazy" swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="0.9s" />
@@ -76,7 +85,7 @@
 						<li class="skill ani" swiper-animate-effect="zoomInRight" swiper-animate-duration="1s" swiper-animate-delay="2.1s">2.掌握HTML5/CSS3/Javascript及相关插件(Jquery/Zepto/Swiper/EChart等)；</li>
 						<li class="skill ani" swiper-animate-effect="zoomInRight" swiper-animate-duration="1s" swiper-animate-delay="2.4s">3.了解HTTP协议，熟练使用AJAX/JSON；</li>
 						<li class="skill ani" swiper-animate-effect="zoomInRight" swiper-animate-duration="1s" swiper-animate-delay="2.7s">4.熟悉NodeJS；熟练使用Git/Gulp/NPM等工具；</li>
-						<li class="skill ani" swiper-animate-effect="zoomInRight" swiper-animate-duration="1s" swiper-animate-delay="3s">5.熟悉前端UI框架:Bootstra/MUI/SUI等；</li>
+						<li class="skill ani" swiper-animate-effect="zoomInRight" swiper-animate-duration="1s" swiper-animate-delay="3s">5.熟悉前端UI框架:Bootstrap/MUI/SUI等；</li>
 						<li class="skill ani" swiper-animate-effect="zoomInRight" swiper-animate-duration="1s" swiper-animate-delay="3.3s">6.熟悉前端MVC框架:AngularJS；</li>
 						<li class="skill ani" swiper-animate-effect="zoomInRight" swiper-animate-duration="1s" swiper-animate-delay="3.6s">7.熟练使用Photoshop, Fireworks进行平面设计、切图。</li>
 					</ul>
@@ -137,11 +146,16 @@
 		</div>
 
 	</body>
-	<script src="js/prefixfree.min.js"></script>
-	<script src="js/jquery.min.js"></script>
+	<!--<script src="js/prefixfree.min.js"></script>-->
+	
 	<script src="js/swiper.min.js"></script>
 	<script src="js/swiper.animate1.0.2.min.js"></script>
 	<script src="js/jquery.lazyload.min.js"></script>
+	<script>
+        $(window).load(function(){
+            $(".loading").fadeOut();
+        })
+    </script>
 	<script>
 		var swiper = new Swiper('.swiper-container', {
 			pagination: '.swiper-pagination',
