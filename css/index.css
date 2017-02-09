@@ -252,6 +252,14 @@
   top: 0;
   left: 0;
 }
+.xl-page3 .skills {
+  width: 90vw;
+  height: 25vw;
+  position: absolute;
+  top: 78%;
+  right: -15%;
+  transform: rotate(-30deg);
+}
 .xl-page3 .killRoll {
   width: 20vw;
   height: 20vw;
@@ -286,7 +294,7 @@
   font-size: 16px;
   font-weight: 700;
   color: #000;
-  padding: 10px 0;
+  padding: 3px 0;
   text-align: left;
 }
 .xl-page4 {
@@ -422,8 +430,9 @@
   height: 40vw;
   border-radius: 5px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 60%;
   margin: 0 auto;
-  margin-top: 55vh;
 }
 .xl-page5 .thanks {
   width: 25vw;
