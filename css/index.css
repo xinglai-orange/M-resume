@@ -22,6 +22,29 @@
   -webkit-align-items: center;
   align-items: center;
 }
+.loading {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 99;
+  position: fixed;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.loading span {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.loading .mailMe {
+  width: 40vw;
+  height: 30vw;
+  vertical-align: middle;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
 .xl-page1 {
   overflow: hidden;
 }
@@ -195,7 +218,7 @@
   transform: translateX(-50%);
 }
 .xl-page2 .ani-qualified {
-  animation: ani-qualified 1s ease 2s both;
+  animation: ani-qualified 1s ease 2.5s both;
 }
 @keyframes ani-qualified {
   from {
@@ -226,7 +249,7 @@
   border-left: 4px solid #000;
 }
 .xl-page2 .aboutMe .ani-line {
-  animation: linedown 2s ease 4s both;
+  animation: linedown 2s ease 3s both;
 }
 @keyframes linedown {
   from {
@@ -256,8 +279,8 @@
   width: 90vw;
   height: 25vw;
   position: absolute;
-  top: 78%;
-  right: -15%;
+  top: 82%;
+  right: -18%;
   transform: rotate(-30deg);
 }
 .xl-page3 .killRoll {
@@ -287,8 +310,9 @@
 }
 .xl-page3 ul {
   position: absolute;
-  top: 38%;
+  top: 34%;
   left: 10%;
+  width: 80vw;
 }
 .xl-page3 ul li {
   font-size: 16px;

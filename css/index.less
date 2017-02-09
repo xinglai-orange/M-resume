@@ -25,7 +25,31 @@
     -webkit-align-items: center;
     align-items: center;
 }
-
+//加载动画样式
+.loading{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 99;
+    position: fixed;
+    text-align: center;
+    overflow: hidden;
+    vertical-align: middle;
+    span{
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .mailMe{
+        width: 40vw;
+        height: 30vw;
+        vertical-align: middle;
+        position: relative;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    }
+}
+//第一页
 .xl-page1 {
     overflow: hidden;
     .bac-img1 {
@@ -237,7 +261,7 @@
 
         }
         .ani-line {
-            animation: linedown 2s ease 4s both;
+            animation: linedown 2s ease 3s both;
         }
         @keyframes linedown {
             from {
@@ -273,8 +297,8 @@
         width: 90vw;
         height: 25vw;
         position: absolute;
-        top: 78%;
-        right: -15%;
+        top: 82%;
+        right: -18%;
         transform: rotate(-30deg);
     }
     .killRoll {
@@ -306,8 +330,9 @@
     //技能文字列表
     ul {
         position: absolute;
-        top: 38%;
+        top: 34%;
         left: 10%;
+        width: 80vw;
         li {
             font-size: 16px;
             font-weight: 700;
