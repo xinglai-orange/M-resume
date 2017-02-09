@@ -9,7 +9,7 @@
 		<link href='//cdn.webfont.youziku.com/webfonts/nomal/97480/19650/589b2f9cf629d80600660876.css' rel='stylesheet' type='text/css' />
 		<link rel="stylesheet" type="text/css" href="css/index.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
-		
+
 	</head>
 
 	<body>
@@ -32,7 +32,7 @@
 				</div>
 				<!--简历第二页-->
 				<div class="swiper-slide xl-page2">
-					<img class="bac-img2 lazy" data-original="images/bac-2.webp"  />
+					<img class="bac-img2 lazy" data-original="images/bac-2.webp" />
 					<div class="postMark">
 						<img src="images/mypho.webp" class="mypho ani" id="postpho" alt="" />
 						<span class="frame ani" id="frame"></span>
@@ -128,20 +128,28 @@
 					</ul>
 				</div>
 			</div>
+			<span id="musicControl">
+        		<a id="mc_play" class="on" onclick="play_music();">
+            		<audio id="musicfx" loop="loop" autoplay="autoplay">
+                		<source src="./mp3/Scenery.ogg" type="audio/mpeg">
+                		<source src="./mp3/Scenery.mp3" type="audio/mpeg">
+            		</audio>
+        		</a>
+ 			</span>
 		</div>
 
 	</body>
 	<script src="js/prefixfree.min.js"></script>
-		<script src="js/jquery.min.js"></script>
-		<script src="js/swiper.min.js"></script>
-		<script src="js/swiper.animate1.0.2.min.js"></script>
-		<script src="js/jquery.lazyload.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/swiper.animate1.0.2.min.js"></script>
+	<script src="js/lazyAndMusic.js"></script>
 	<script>
 		var swiper = new Swiper('.swiper-container', {
 			pagination: '.swiper-pagination',
 			direction: 'vertical',
 			slidesPerView: 1,
-			mousewheelContro:false,
+			mousewheelContro: false,
 			grabCursor: true,
 			paginationClickable: true,
 			runCallbacksOnInit: true,
@@ -150,7 +158,7 @@
 				swiperAnimate(swiper); //初始化完成开始动画
 				$("img.lazy").lazyload({
 					effect: "fadeIn",
-					placeholder:"images/bac-2.webp"
+					placeholder: "images/bac-2.webp"
 				});
 				$('.handhlip1').delay(4000).fadeIn();
 			},
@@ -167,6 +175,7 @@
 				$(".xl-page4 .line4").addClass("ani-line4");
 				$(".xl-page5 .windmill").addClass("windroll");
 				$(".xl-page5 .thanks").addClass("narrow");
+				$("#musicControl").show();
 			},
 			onSlideChangeStart: function(swiper) { //滑动开始，之前的动画取消
 				$("#postpho").removeClass("ani-mypho");
@@ -183,6 +192,7 @@
 			onTouchMove: function(swiper) { //手势滑动时小手消失
 				$('.img-handhlip').fadeOut();
 				$('.handhlip1').fadeOut();
+				$("#musicControl").hide();
 			}
 		});
 	</script>
