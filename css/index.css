@@ -422,9 +422,8 @@
   height: 40vw;
   border-radius: 5px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 60%;
   margin: 0 auto;
+  margin-top: 55vh;
 }
 .xl-page5 .thanks {
   width: 25vw;
@@ -485,47 +484,5 @@
   to {
     transform: scale(1);
     opacity: 1;
-  }
-}
-#musicControl {
-  position: fixed;
-  left: 10px;
-  top: 20px;
-  margin-top: 0;
-  display: inline-block;
-  z-index: 99;
-}
-#musicControl a {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  overflow: hidden;
-  background: url("../images/music.png") no-repeat 0 0;
-}
-#musicControl a audio {
-  width: 100%;
-  height: 56px;
-}
-#musicControl a.stop {
-  background-position: -24px 0;
-}
-#musicControl a.on {
-  background-position: 0 1px;
-  -webkit-animation: rotataZ 1.2s linear infinite;
-}
-@-webkit-keyframes reverseRotataZ {
-  0% {
-    -webkit-transform: rotateZ(0deg);
-  }
-  100% {
-    -webkit-transform: rotateZ(-360deg);
-  }
-}
-@-webkit-keyframes rotataZ {
-  0% {
-    -webkit-transform: rotateZ(0deg);
-  }
-  100% {
-    -webkit-transform: rotateZ(360deg);
   }
 }

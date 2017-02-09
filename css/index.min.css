@@ -64,10 +64,4 @@ to{width:1200px}}.xl-page4 ul{width:50vw;position:absolute;top:3%;left:13%;color
 .xl-page5 .windroll{animation:windroll 3s linear infinite;transform-origin:center center}
 @keyframes windroll{from{transform:rotate(0)}to{transform:rotate(360deg)}}.xl-page5 .narrow{animation:narrow 1s ease 2s both}
 @keyframes narrow{from{transform:scale(2);opacity:0}to{transform:scale(1);opacity:1}
-}#musicControl{position:fixed;left:10px;top:20px;margin-top:0;display:inline-block;z-index:99}
-#musicControl a{display:inline-block;width:24px;height:24px;overflow:hidden;background:url("../images/music.png") no-repeat 0 0}
-#musicControl a audio{width:100%;height:56px}#musicControl a.stop{background-position:-24px 0}
-#musicControl a.on{background-position:0 1px;-webkit-animation:rotataZ 1.2s linear infinite}
-@-webkit-keyframes reverseRotataZ{0%{-webkit-transform:rotateZ(0)}
-100%{-webkit-transform:rotateZ(-360deg)}}@-webkit-keyframes rotataZ{0%{-webkit-transform:rotateZ(0)}
-100%{-webkit-transform:rotateZ(360deg)}}
+}

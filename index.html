@@ -129,13 +129,7 @@
 					</ul>
 				</div>
 			</div>
-			<span id="musicControl">
-        		<a id="mc_play" class="on" onclick="play_music();">
-            		<audio id="musicfx" loop="loop" autoplay="autoplay">
-                		<source src="./mp3/music.mp3" type="audio/mpeg">
-            		</audio>
-        		</a>
- 			</span>
+			
 		</div>
 
 	</body>
@@ -143,7 +137,7 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/swiper.min.js"></script>
 	<script src="js/swiper.animate1.0.2.min.js"></script>
-	<script src="js/lazyAndMusic.js"></script>
+	<script src="js/jquery.lazyload.min.js"></script>
 	<script>
 		var swiper = new Swiper('.swiper-container', {
 			pagination: '.swiper-pagination',
@@ -175,7 +169,6 @@
 				$(".xl-page4 .line4").addClass("ani-line4");
 				$(".xl-page5 .windmill").addClass("windroll");
 				$(".xl-page5 .thanks").addClass("narrow");
-				$("#musicControl").show();
 			},
 			onSlideChangeStart: function(swiper) { //滑动开始，之前的动画取消
 				$("#postpho").removeClass("ani-mypho");
@@ -192,7 +185,6 @@
 			onTouchMove: function(swiper) { //手势滑动时小手消失
 				$('.img-handhlip').fadeOut();
 				$('.handhlip1').fadeOut();
-				$("#musicControl").hide();
 			}
 		});
 	</script>
