@@ -127,13 +127,13 @@
 				<!--最后一页简历-->
 				<div class="swiper-slide xl-page5">
 					<img class="bac-img2 lazy" data-original="images/bac-2.webp" alt="" />
-					<img data-original="images/weixin.png" class="weixin ani lazy" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s" alt="" />
+					<img data-original="images/weixin.png" class="weixin ani lazy" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="4s" alt="" />
 					<img data-original="images/thanks.png" class="thanks lazy" />
 					<img data-original="images/windmill.webp" class="windmill ani lazy" alt="" />
 					<div class="P5textBox">
-						<p id="P5text1" class="P5word1">努力</p>
-						<p id="P5text2" class="P5word2">是为了明天更好的自己！</p>
-						<p id="P5text3" class="P5word3">期待加入你们！</p>
+						<p class="P5word1">努力</p>
+						<p class="P5word2">是为了明天更好的自己！</p>
+						<p class="P5word3">期待加入你们！</p>
 					</div>
 					<ul class="concact ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="4s">
 						<li><img data-original="images/mobile.svg" class="mobile lazy" alt="" />
@@ -196,6 +196,9 @@
 				} else if(swiper.progress === 1) {
 					$(".xl-page5 .windmill").addClass("windroll");
 					$(".xl-page5 .thanks").addClass("narrow");
+					$(".P5textBox .P5word1").attr("id", "P5text1");
+					$(".P5textBox .P5word2").attr("id", "P5text2");
+					$(".P5textBox .P5word3").attr("id", "P5text3");
 					dothis.work();
 				}
 				$('.img-handhlip').delay(4000).fadeIn();
@@ -212,15 +215,16 @@
 				$(".xl-page4 .line4").removeClass("ani-line4");
 				$(".xl-page5 .windmill").removeClass("windroll");
 				$(".xl-page5 .thanks").removeClass("narrow");
-				if(swiper.progress !== 1){
-					$(".P5textBox p").hide();
-				}
-				
+				$(".P5textBox p").hide();
+
 			},
 			onTouchMove: function(swiper) { //手势滑动时小手消失
 				$('.img-handhlip').fadeOut();
 				$('.handhlip1').fadeOut();
 				dothis.out();
+				$(".P5textBox .P5word1").removeAttr("id", "P5text1");
+				$(".P5textBox .P5word2").removeAttr("id", "P5text2");
+				$(".P5textBox .P5word3").removeAttr("id", "P5text3");
 			}
 		});
 	</script>
