@@ -3,6 +3,10 @@
 html,body{
     width: 100%;
     height: 100%;
+    
+}
+html{
+	font-size: 16px;
 }
 html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
     margin: 0;
@@ -21,11 +25,6 @@ ul, ol {
     list-style: none;
 }
 
-input {
-    padding-top: 0;
-    padding-bottom: 0;
-    font-family: "jdlibianjian8d0d4bbb017cc8","SimSun", "微软雅黑";
-}
 
 /*去掉行内替换元素空白间隙*/
 select, input {
@@ -53,9 +52,9 @@ table {
 }
 
 body {
-    font: 12px/150%  "jdlibianjian8d0d4bbb017cc8",Arial, Verdana, "\5b8b\4f53"; /*宋体 unicode */
+    font: 12px/150%  "jdlibianjian8d1b36a6717cc8",Arial, Verdana, "\5b8b\4f53"; /*宋体 unicode */
     color: #fff;
-    font-family: "jdlibianjian8d0d4bbb017cc8"!important;
+    font-family: "jdlibianjian8d1b36a6717cc8"!important;
     background: #fff;
 }
 
