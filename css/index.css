@@ -224,7 +224,7 @@
   transform: translateX(-50%);
 }
 .xl-page2 .ani-qualified {
-  animation: ani-qualified 1s ease 2.5s both;
+  animation: ani-qualified 1s ease 5s both;
 }
 @keyframes ani-qualified {
   from {
@@ -488,7 +488,6 @@
   left: 0;
   color: #000;
   padding-left: 10px;
-  font-weight: 700;
   text-align: left;
   overflow: hidden;
   letter-spacing: 3px;
